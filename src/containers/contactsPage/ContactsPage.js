@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import {ContactForm} from '../../components/contactForm/ContactForm'
 import {TileList} from '../../components/tileList/TileList'
 
-export const ContactsPage = () => {
-  const [name, setName] = setState('')
-  const [phone, setPhone] = setState('')
-  const [email, setEmail] = setState('')
-  const [duplicate, setDuplicate] = setState(false)
+export const ContactsPage = ({contacts, addContact}) => {
+  const [name, setName] = useState('')
+  const [phone, setPhone] = useState('')
+  const [email, setEmail] = useState('')
+  const [duplicate, setDuplicate] = useState(false)
   
   const handleSubmit = (e) => {
     e.preventDefault();

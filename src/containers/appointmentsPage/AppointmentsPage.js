@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { TileList } from "../../components/tileList/TileList";
 import { AppointmentForm } from '../../components/appointmentForm/AppointmentForm'
 
-export const AppointmentsPage = ({appointments, addAppointment, contacts}) => {
+export const AppointmentsPage = ({appointments, contacts, addAppointment}) => {
   const [title, setTitle] = useState('')
   const [contact, setContact] = useState(
     contacts.length > 0 ? contacts[0].name : ''
